@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "../assets/images/logo.svg";
 import hero from "../assets/images/main.svg";
 import styled from "styled-components";
@@ -19,7 +20,9 @@ const Landing = () => {
             quinoa lo-fi tote bag adaptogen everyday carry meggings +1 brunch
             narwhal. Login/Register
           </p>
-          <button className="btn btn-hero">Login/Register</button>
+          <Link to="/register" className="btn btn-hero">
+            Login/Register
+          </Link>
         </div>
         <img src={hero} alt="" className="img main-img" />
       </div>
